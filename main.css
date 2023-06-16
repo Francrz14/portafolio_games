@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+
+}
 /* Estilos para el cuerpo */
 body {
     display: flex; /* Establece el cuerpo como un contenedor flexible */
@@ -5,7 +9,7 @@ body {
     margin: 0; /* Margen: 0 */
     padding: 0; /* Relleno: 0 */
     font-family: sans-serif; /* Familia de fuentes: sans-serif */
-    min-width: 1750px; /* Ancho mínimo: 1750 píxeles */
+    min-width: 1950px; /* Ancho mínimo: 1750 píxeles */
     background-image: url('./IMG/the-last-of-us-parte-ii.jpg'); /* Imagen de fondo */
     background-repeat: no-repeat; /* No repetir la imagen de fondo */
     background-size: cover; /* Ajustar el tamaño de la imagen de fondo para cubrir */
@@ -14,6 +18,7 @@ body {
 
 /* Estilos para el encabezado */
 header {
+    width: 100%;
     position: relative; /* Establece la posición del elemento header como relativa */
     background-image: url("./IMG/fondo_header.png"); /* Establece la imagen de fondo del encabezado */
     background-size: cover; /* Ajusta el tamaño de la imagen de fondo para que cubra todo el encabezado */
@@ -92,6 +97,8 @@ summary {
 }
 
 menu {
+    min-width: 200px;
+    max-width: 200px;
     font-size: 20px; /* Establece el tamaño de fuente del elemento "menu" en 20 píxeles */
     display: flex; /* Establece el elemento "menu" como un contenedor flexible */
     flex-direction: column; /* Establece la dirección de los elementos hijos como columnas */
@@ -219,6 +226,8 @@ hr {
 }
 /* Estilos para el aside */
 aside {
+    min-width: 200px;
+    max-width: 200px;
     font-size: 20px; /* Tamaño de fuente: 20 píxeles */
     display: flex; /* Mostrar como contenedor flexible */
     flex-direction: column; /* Dirección de los elementos hijos: columna */
@@ -251,6 +260,7 @@ nav li a:hover {
 
 /* Estilos para el pie de página */
 footer {
+    
     width: 100%; /* Ancho: 100% */
     font-size: 25px; /* Tamaño de fuente: 25 píxeles */
     padding-top: 30px; /* Relleno superior: 30 píxeles */
@@ -464,5 +474,28 @@ tr:hover {
     text-align: center;
 }
 
+/* para movil */
+@media screen and (max-width: 500px) {
+    footer .footer-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+    
+    footer .footer-content .left-section,
+    footer .footer-content .right-section,
+    footer .footer-content .payment-options {
+      margin-bottom: 20px;
+    }
 
-/* para tableta*/
+    section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      
+      section .caja_consolas {
+        margin-bottom: 20px;
+      }
+  }
