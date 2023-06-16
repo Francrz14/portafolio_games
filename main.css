@@ -1,0 +1,468 @@
+/* Estilos para el cuerpo */
+body {
+    display: flex; /* Establece el cuerpo como un contenedor flexible */
+    flex-direction: column; /* Dirección de los elementos hijos: columna */
+    margin: 0; /* Margen: 0 */
+    padding: 0; /* Relleno: 0 */
+    font-family: sans-serif; /* Familia de fuentes: sans-serif */
+    min-width: 1750px; /* Ancho mínimo: 1750 píxeles */
+    background-image: url('./IMG/the-last-of-us-parte-ii.jpg'); /* Imagen de fondo */
+    background-repeat: no-repeat; /* No repetir la imagen de fondo */
+    background-size: cover; /* Ajustar el tamaño de la imagen de fondo para cubrir */
+    background-position: center; /* Posición de la imagen de fondo: centro */
+}
+
+/* Estilos para el encabezado */
+header {
+    position: relative; /* Establece la posición del elemento header como relativa */
+    background-image: url("./IMG/fondo_header.png"); /* Establece la imagen de fondo del encabezado */
+    background-size: cover; /* Ajusta el tamaño de la imagen de fondo para que cubra todo el encabezado */
+    background-position: center; /* Centra la imagen de fondo en el encabezado */
+    background-repeat: no-repeat; /* Evita que la imagen de fondo se repita */
+    padding: 20px; /* Agrega un espacio de relleno de 20 píxeles alrededor del contenido del encabezado */
+}
+
+/* Estilos para el título dentro del encabezado */
+.titulo {
+    display: flex; /* Establece el elemento con clase "titulo" como un contenedor flexible */
+    justify-content: center; /* Centra horizontalmente los elementos hijos dentro de "titulo" */
+    align-items: center; /* Centra verticalmente los elementos hijos dentro de "titulo" */
+    position: relative; /* Establece la posición del elemento "titulo" como relativa */
+    z-index: 1; /* Establece la propiedad de apilamiento del elemento "titulo" */
+}
+
+h1 {
+    font-size: 70px; /* Establece el tamaño de fuente del elemento h1 en 70 píxeles */
+    font-weight: bold; /* Establece el grosor de la fuente del elemento h1 en negrita */
+    margin-right: 50px; /* Establece un margen derecho de 50 píxeles para el elemento h1 */
+    color: red; /* Establece el color de texto del elemento h1 en rojo */
+}
+
+figure {
+    width: 100%; /* Establece el ancho del elemento figure al 100% de su contenedor */
+    height: 250px; /* Establece la altura del elemento figure en 250 píxeles */
+    margin: 0; /* Elimina los márgenes predeterminados del elemento figure */
+    display: flex; /* Establece el elemento figure como un contenedor flexible */
+    justify-content: center; /* Centra horizontalmente los elementos hijos dentro de figure */
+    align-items: center; /* Centra verticalmente los elementos hijos dentro de figure */
+}
+
+figure img {
+    width: 250px; /* Establece el ancho de las imágenes dentro de figure en 250 píxeles */
+    /*filter: brightness(150%) sepia(100%) hue-rotate(180deg);*/ /* Comentario: Este estilo está comentado y no tiene efecto en la imagen */
+}
+
+details {
+    color: blueviolet; /* Establece el color de texto de los elementos details en blueviolet */
+    margin-bottom: 10px; /* Establece un margen inferior de 10 píxeles para los elementos details */
+}
+
+summary {
+    margin-bottom: 10px; /* Establece un margen inferior de 10 píxeles para los elementos summary */
+}
+
+.registro {
+    display: flex; /* Establece el elemento con clase "registro" como un contenedor flexible */
+    font-size: 25px; /* Establece el tamaño de fuente del elemento con clase "registro" en 25 píxeles */
+    justify-content: space-around; /* Distribuye uniformemente los elementos hijos dentro de "registro" */
+    align-items: center; /* Centra verticalmente los elementos hijos dentro de "registro" */
+    background-color: grey; /* Establece el color de fondo del elemento con clase "registro" en gris */
+    padding: 10px; /* Agrega un espacio de relleno de 10 píxeles alrededor del contenido de "registro" */
+}
+
+.iniciar_registrar ul {
+    display: flex; /* Establece el elemento <ul> dentro de "iniciar_registrar" como un contenedor flexible */
+    list-style: none; /* Elimina los estilos de viñetas de la lista */
+    margin: 0; /* Elimina los márgenes predeterminados de la lista */
+    padding: 0; /* Elimina los rellenos predeterminados de la lista */
+}
+
+.iniciar_registrar ul li {
+    margin-right: 100px; /* Establece un margen derecho de 100 píxeles para cada elemento <li> dentro de "iniciar_registrar" */
+}
+
+.iniciar_registrar ul li a {
+    text-decoration: none; /* Elimina la decoración de subrayado de los enlaces */
+    color: black; /* Establece el color de texto de los enlaces en negro */
+}
+
+/* Estilos para la sección principal */
+.pagina {
+    display: flex; /* Establece el elemento con clase "pagina" como un contenedor flexible */
+}
+
+menu {
+    font-size: 20px; /* Establece el tamaño de fuente del elemento "menu" en 20 píxeles */
+    display: flex; /* Establece el elemento "menu" como un contenedor flexible */
+    flex-direction: column; /* Establece la dirección de los elementos hijos como columnas */
+    align-items: flex-start; /* Alinea los elementos hijos a la izquierda dentro de "menu" */
+    margin-top: 0; /* Elimina el margen superior predeterminado de "menu" */
+    margin-bottom: 0; /* Elimina el margen inferior predeterminado de "menu" */
+    background-color: rgb(210, 208, 208); /* Establece el color de fondo de "menu" en un tono de gris */
+    border-right: 1px solid black; /* Agrega un borde derecho de 1 píxel sólido de color negro a "menu" */
+    flex-basis: 13%; /* Establece el tamaño base flexible de "menu" en un 13% del espacio disponible */
+}
+
+menu ul,
+aside ul {
+    margin-top: 0px; /* Margen superior: 0 píxeles */
+    padding-left: 0px; /* Relleno izquierdo: 0 píxeles */
+}
+
+/* Estilos para los títulos del aside */
+aside h3 {
+    padding-left: 40px; /* Relleno izquierdo: 40 píxeles */
+}
+
+/* Estilos para los elementos de lista del menú y del aside */
+menu ul li,
+aside ul li {
+    list-style-type: none; /* Eliminar estilo de viñeta */
+    margin-bottom: 10px; /* Margen inferior: 10 píxeles */
+}
+
+/* Estilos para los enlaces del menú y del aside */
+menu ul li a,
+aside ul li a {
+    text-decoration: none; /* Sin decoración de subrayado */
+    color: blueviolet; /* Color de texto: blueviolet */
+}
+
+/* Estilos para la sección principal */
+section {
+    padding-bottom: 30px; /* Relleno inferior: 30 píxeles */
+    background-color: rgb(199, 180, 218); /* Color de fondo: rgb(199, 180, 218) */
+    flex: 4; /* Expansión flexible: 4 */
+    display: flex; /* Mostrar como contenedor flexible */
+    flex-direction: column; /* Dirección de los elementos hijos: columna */
+}
+
+/* Estilos para la caja de las consolas */
+.caja_consolas {
+    display: flex; /* Mostrar como contenedor flexible */
+    align-items: center; /* Alinear elementos hijos verticalmente al centro */
+    justify-content: center; /* Alinear elementos hijos horizontalmente al centro */
+    margin-top: 60px; /* Margen superior: 60 píxeles */
+    margin-bottom: 50px; /* Margen inferior: 50 píxeles */
+    margin-left: 180px; /* Margen izquierdo: 180 píxeles */
+}
+
+/* Estilos para el botón de comprar consola */
+.comprar_consola {
+    display: block; /* Mostrar como bloque */
+    margin-top: 340px; /* Margen superior: 340 píxeles */
+    text-align: left; /* Alinear texto a la izquierda */
+    border-radius: 20px; /* Radio de borde: 20 píxeles */
+    background-color: cornflowerblue; /* Color de fondo: cornflowerblue */
+    color: white; /* Color de texto: blanco */
+    padding: 5px 25px; /* Relleno: 5 píxeles arriba y abajo, 25 píxeles izquierda y derecha */
+    font-size: 20px; /* Tamaño de fuente: 20 píxeles */
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.5); /* Sombra del cuadro: 0 desplazamiento vertical, 4 píxeles desplazamiento horizontal, 4 píxeles desenfoque, color de sombra: rgba(0, 0, 0, 0.5) */
+}
+
+/* Estilos para el botón de comprar consola al pasar el cursor por encima */
+.comprar_consola:hover {
+    transform: scale(1.2); /* Escalar al 120% del tamaño original */
+    color: red;
+}
+
+/* Estilos para la línea divisoria */
+hr {
+    margin-top: 35px; /* Margen superior: 35 píxeles */
+}
+
+/* Estilos para las cajas de las consolas */
+.consolas {
+    border: 1px solid black; /* Borde: 1 píxel sólido de color negro */
+    width: 670px; /* Ancho: 670 píxeles */
+    height: 320px; /* Alto: 320 píxeles */
+    background-size: cover; /* Ajustar el tamaño de la imagen de fondo para cubrir */
+    background-repeat: no-repeat; /* No repetir la imagen de fondo */
+    background-position: center; /* Posición de la imagen de fondo: centro */
+    box-sizing: border-box; /* Incluir el borde en el tamaño total de la caja */
+    margin-right: 150px; /* Margen derecho: 150 píxeles */
+    border-radius: 20px; /* Radio de borde: 20 píxeles */
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.5); /* Sombra del cuadro: 0 desplazamiento vertical, 4 píxeles desplazamiento horizontal, 4 píxeles desenfoque, color de sombra: rgba(0, 0, 0, 0.5) */
+}
+
+/* Estilos para las cajas de las consolas individuales */
+.ps5 {
+    background-image: url("./IMG/PS5.jpg"); /* Imagen de fondo: "./IMG/PS5.jpg" */
+}
+
+.ps4 {
+    background-image: url("./IMG/ps4.jpg"); /* Imagen de fondo: "./IMG/ps4.jpg" */
+}
+
+.ps3 {
+    background-image: url("./IMG/PS3.jpg"); /* Imagen de fondo: "./IMG/PS3.jpg" */
+}
+
+.xbox_series_x {
+    background-image: url("./IMG/xbox-series-x.jpg"); /* Imagen de fondo: "./IMG/xbox-series-x.jpg" */
+}
+
+.xbox_series_s {
+    background-image: url("./IMG/xbox_series_s.jpg"); /* Imagen de fondo: "./IMG/xbox_series_s.jpg" */
+}
+
+.xbox_360 {
+    background-image: url("./IMG/xbox_360.jpg");  /* Imagen de fondo: "./IMG/xbox_360.jpg" */
+}
+
+.switch_oled {
+    background-image: url("./IMG/nintendo-switch-oled.webp"); /* Imagen de fondo: "./IMG/nintendo-switch-oled.webp" */
+}
+
+.switch_slim {
+    background-image: url("./IMG/switch_slim.jpg"); /* Imagen de fondo: "./IMG/switch_slim.jpg" */
+}
+/* Estilos para el aside */
+aside {
+    font-size: 20px; /* Tamaño de fuente: 20 píxeles */
+    display: flex; /* Mostrar como contenedor flexible */
+    flex-direction: column; /* Dirección de los elementos hijos: columna */
+    align-items: center; /* Alinear elementos hijos horizontalmente al centro */
+    background-color: rgb(210, 208, 208); /* Color de fondo: rgb(210, 208, 208) */
+    /*flex: 1; /* Establece la expansión flexible del aside para ocupar el espacio disponible */
+    border-left: 1px solid black; /* Borde izquierdo: 1 píxel sólido de color negro */
+    flex-basis: 13%; /* Tamaño base flexible: 13% */
+}
+
+/* Cambiar color del nav al colocar el ratón encima */
+nav li a:hover {
+    color: #aaf2aa;
+  }
+  
+  /* Cambiar color del menú al colocar el ratón encima */
+  menu li a:hover {
+    color: red;
+  }
+  
+  /* Cambiar color del aside al colocar el ratón encima */
+  aside li a:hover {
+    color: red;
+  }
+  
+  /* Cambiar color de las div del footer al colocar el ratón encima */
+  footer ul li a:hover {
+    color: yellow;
+  }
+
+/* Estilos para el pie de página */
+footer {
+    width: 100%; /* Ancho: 100% */
+    font-size: 25px; /* Tamaño de fuente: 25 píxeles */
+    padding-top: 30px; /* Relleno superior: 30 píxeles */
+    background-color: grey; /* Color de fondo: gris */
+    height: auto; /* Altura automática */
+}
+
+/* Estilos para el contenido del pie de página */
+.footer-content {
+    display: flex; /* Mostrar como contenedor flexible */
+    justify-content: center; /* Alinear elementos hijos horizontalmente al centro */
+    align-items: flex-start; /* Alinear elementos hijos verticalmente al inicio */
+}
+
+.left-section,
+.right-section {
+    margin-right: 150px; /* Margen derecho: 150 píxeles */
+}
+
+/* Estilos para los enlaces del pie de página */
+.footer-links,
+.social-links,
+.payment-options ul {
+    padding-left: 0; /* Relleno izquierdo: 0 */
+    list-style-type: none; /* Eliminar estilo de viñeta */
+    text-decoration: none; /* Sin decoración de subrayado */
+}
+
+.footer-links a,
+.social-links a,
+.payment-options a {
+    text-decoration: none; /* Sin decoración de subrayado */
+}
+
+.social-links i,
+.payment-options i {
+    margin-right: 6px; /* Margen derecho: 6 píxeles */
+}
+
+/* Estilos para el texto de derechos de autor en el pie de página */
+.footer-content {
+    text-align: center; /* Alinear texto al centro */
+}
+
+/* Estilos para el contenedor de la política de privacidad */
+.container_privacidad {
+    font-size: 20px; /* Tamaño de fuente: 20 píxeles */
+    max-width: 1000px; /* Ancho máximo: 1000 píxeles */
+    margin: 0 auto; /* Margen: 0 en la parte superior e inferior, auto en los lados izquierdo y derecho para centrar horizontalmente */
+    padding: 20px; /* Relleno: 20 píxeles */
+    border: 1px solid #ccc; /* Borde: 1 píxel sólido de color #ccc */
+    border-radius: 10px; /* Radio de borde: 10 píxeles */
+    background-color: #f9f9f9; /* Color de fondo: #f9f9f9 */
+}
+
+h1 {
+    text-align: center; /* Alinear texto al centro */
+    margin-bottom: 80px; /* Margen inferior: 80 píxeles */
+}
+
+/* Estilos para el contenedor de los términos de uso */
+.container_terminos {
+    font-size: 20px; /* Tamaño de fuente: 20 píxeles */
+    max-width: 1000px; /* Ancho máximo: 1000 píxeles */
+    margin: 0 auto; /* Margen: 0 en la parte superior e inferior, auto en los lados izquierdo y derecho para centrar horizontalmente */
+    padding: 30px; /* Relleno: 30 píxeles */
+    border: 1px solid #ccc; /* Borde: 1 píxel sólido de color #ccc */
+    border-radius: 10px; /* Radio de borde: 10 píxeles */
+    background-color: #f9f9f9; /* Color de fondo: #f9f9f9 */
+}
+
+h2 {
+    margin-top: 30px; /* Margen superior: 30 píxeles */
+    margin-bottom: 10px; /* Margen inferior: 10 píxeles */
+}
+
+/* Estilos para el contenedor de contacto */
+.container_contacto {
+    padding: 20px; /* Relleno: 20 píxeles */
+    background-color: #f9f9f9; /* Color de fondo: #f9f9f9 */
+    border-radius: 10px; /* Radio de borde: 10 píxeles */
+    max-width: 800px; /* Ancho máximo: 800 píxeles */
+    margin: 0 auto; /* Margen: 0 en la parte superior e inferior, auto en los lados izquierdo y derecho para centrar horizontalmente */
+}
+
+/* Registro de usuario */
+
+/* Estilos para el contenedor principal del formulario */
+.contedor_body_form {
+    display: flex; /* Mostrar como contenedor flexible */
+    justify-content: center; /* Alinear elementos hijos horizontalmente al centro */
+    align-items: center; /* Alinear elementos hijos verticalmente al centro */
+    height: 100vh; /* Altura: 100% del viewport */
+}
+
+/* Estilos para el contenedor del formulario */
+.container_form {
+    font-size: 20px; /* Tamaño de fuente: 20 píxeles */
+    width: 800px; /* Ancho: 800 píxeles */
+    height: auto; /* Altura automática */
+    background-color: #f9f9f9; /* Color de fondo: #f9f9f9 */
+    padding: 40px; /* Relleno: 40 píxeles */
+    border-radius: 10px; /* Radio de borde: 10 píxeles */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra: 0 desplazamiento horizontal, 0 desplazamiento vertical, 10 píxeles de difuminado, color de sombra rgba(0, 0, 0, 0.1) */
+}
+
+.container_form fieldset {
+    padding: 40px; /* Relleno: 40 píxeles */
+}
+
+.container_form input[type="text"],
+.container_form input[type="password"],
+.container_form input[type="email"],
+.container_form input[type="tel"],
+.container_form input[type="list"],
+.container_form input[type="date"],
+.container_form select {
+    width: 30%; /* Ancho: 30% */
+    padding: 10px; /* Relleno: 10 píxeles */
+    font-size: 20px; /* Tamaño de fuente: 20 píxeles */
+    border-radius: 5px; /* Radio de borde: 5 píxeles */
+    border: 1px solid #ccc; /* Borde: 1 píxel sólido de color #ccc */
+}
+
+input:valid + .boton-registro {
+    visibility: visible; /* Hacer visible el botón de registro cuando el campo de entrada es válido */
+}
+
+/* Estilos para el mapa de satélite */
+.satelite {
+    margin-top: 20px; /* Margen superior: 20 píxeles */
+    display: flex; /* Mostrar como contenedor flexible */
+    justify-content: center; /* Alinear elementos hijos horizontalmente al centro */
+    align-items: center; /* Alinear elementos hijos verticalmente al centro */
+}
+
+#wrapper-9cd199b9cc5410cd3b1ad21cab2e54d3 {
+    border: 1px solid black; /* Borde: 1 píxel sólido de color negro */
+}
+
+/* Estilos para la tabla de compra de consolas */
+.body_table {
+    display: flex; /* Mostrar como contenedor flexible */
+    flex-direction: column; /* Dirección de los elementos hijos: columna */
+    justify-content: space-between; /* Distribuir el espacio restante entre los elementos hijos */
+    min-height: 100vh; /* Altura mínima: 100% del viewport */
+    align-items: center; /* Alinear elementos hijos verticalmente al centro */
+}
+
+.container_table {
+    text-align: center; /* Alinear texto al centro */
+    width: 30%; /* Ancho: 30% */
+    margin: auto; /* Margen automático */
+    color: red; /* Color de texto: rojo */
+}
+
+table {
+    width: 100%; /* Ancho: 100% */
+    border-collapse: collapse; /* Colapso de bordes de tabla */
+}
+
+th, td {
+    padding: 8px; /* Relleno: 8 píxeles */
+    text-align: left; /* Alinear texto a la izquierda */
+    border-bottom: 1px solid #ddd; /* Borde inferior: 1 píxel sólido de color #ddd */
+}
+
+th {
+    background-color: #f2f2f2; /* Color de fondo del encabezado de la tabla: #f2f2f2 */
+}
+
+tr:hover {
+    background-color: #f5f5f5; /* Color de fondo al pasar el cursor sobre una fila: #f5f5f5 */
+}
+
+.selected {
+    background-color: #aaf2aa; /* Color de fondo de la fila seleccionada: #aaf2aa */
+}
+
+.hidden {
+    display: none; /* Ocultar elemento */
+}
+
+/* Estilos para el botón de volver a inicio */
+.volver_inicio {
+    text-align: center; /* Alinear texto al centro */
+    margin: 30px; /* Margen: 30 píxeles */
+    border-radius: 20px; /* Radio de borde: 20 píxeles */
+    background-color: cornflowerblue; /* Color de fondo: cornflowerblue */
+    color: white; /* Color de texto: blanco */
+    padding: 5px 25px; /* Relleno: 5 píxeles en la parte superior e inferior, 25 píxeles en los lados izquierdo y derecho */
+    font-size: 20px; /* Tamaño de fuente: 20 píxeles */
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.5); /* Sombra: 0 desplazamiento horizontal, 4 píxeles de desplazamiento vertical, 4 píxeles de difuminado, color de sombra rgba(0, 0, 0, 0.5) */
+}
+
+.boton_centrado {
+    text-align: center; /* Alinear texto al centro */
+}
+
+.volver_inicio:hover {
+    transform: scale(1.2); /* Escalar en un 20% al pasar el cursor sobre el botón */
+}
+
+
+.volver_inicio a {
+    text-decoration: none; /* Sin decoración de enlace */
+    color: black; /* Color de texto: negro */
+}
+
+.copyright {
+    text-align: center;
+}
+
+
+/* para tableta*/

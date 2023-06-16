@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de usuario</title>
+    <link rel="icon" href="./IMG/icon_sonic.jpg">
+    <link rel="stylesheet" href="./main.css">
+</head>
+
+<body>
+    <div class="contedor_body_form">
+        <div class="container_form">
+            <form action="#" method="post">
+                <h1>Registro de Usuario</h1>
+                <fieldset>
+                    <label for="nombre">Nombre</label>&nbsp;
+                    <input type="text" name="name" id="name" required>&nbsp;&nbsp;
+                    <label for="apellidos">Apellidos</label>&nbsp;
+                    <input type="text" name="apellidos" id="apellidos" required><br><br>
+                    <label for="email">Email</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="email" name="email" id="email" required><br><br>
+                    <label for="telefono">Teléfono </label>
+                    <input type="tel" name="telefono" id="telefono" required><br><br>
+                    <label for="fecha">Fecha de nacimiento</label>
+                    <input type="date" name="fecha" id="fecha" required><br><br>
+                    <label for="pais">País:</label>
+                    <input list="paises" id="pais" name="pais" required>
+                    <datalist id="paises">
+                        <option value="Alemania"></option>
+                        <option value="Austria"></option>
+                        <option value="Bélgica"></option>
+                        <option value="Bulgaria"></option>
+                        <option value="Chipre"></option>
+                        <option value="Croacia"></option>
+                        <option value="Dinamarca"></option>
+                        <option value="Eslovaquia"></option>
+                        <option value="Eslovenia"></option>
+                        <option value="España"></option>
+                        <option value="Estonia"></option>
+                        <option value="Finlandia"></option>
+                        <option value="Francia"></option>
+                        <option value="Grecia"></option>
+                        <option value="Hungría"></option>
+                        <option value="Irlanda"></option>
+                        <option value="Italia"></option>
+                        <option value="Letonia"></option>
+                        <option value="Lituania"></option>
+                        <option value="Luxemburgo"></option>
+                        <option value="Malta"></option>
+                        <option value="Países Bajos"></option>
+                        <option value="Polonia"></option>
+                        <option value="Portugal"></option>
+                        <option value="República Checa"></option>
+                        <option value="Rumanía"></option>
+                        <option value="Suecia"></option>
+                    </datalist><br><br>
+                    <input type="checkbox" name="acepto" id="acepto" checked required>
+                    <label for="acepto">Acepto las condiciones de uso</label> <br><br>
+                    <label for="">Sexo</label>&nbsp;&nbsp;
+                    <input type="radio" name="sexo" id="hombre" required> Masculino
+                    <input type="radio" name="sexo" id="mujer" required> Mujer
+                    <div>
+                        <button class="volver_inicio boton-registro">Registrarse</button>
+                    </div>
+                </fieldset>
+            </form>
+            <div class="boton_centrado">
+                <button class="volver_inicio"class="volver_inicio"><a href="index.html">Volver a Inicio</a></button>
+            </div>
+        </div>
+    </div>
+    <!-- footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="left-section">
+                <ul class="footer-links">
+                    <h3>Legal</h3>
+                    <li><a href="politica_de_privacidad.html" target="_blank">Política de privacidad</a></li>
+                    <li><a href="Terminos_de_uso.html" target="_blank">Términos de uso</a></li>
+                </ul>
+            </div>
+            <div class="right-section">
+                <ul class="social-links">
+                    <h3>Redes Sociales</h3>
+                    <li><a href="#" target="_blank"><i class="fab fa-facebook"></i>Facebook</a></li>
+                    <li><a href="#" target="_blank"><i class="fab fa-twitter"></i>Twitter</a></li>
+                    <li><a href="https://www.instagram.com/fran_crz_14/"><i class="fab fa-instagram" target="_blank"></i>Instagram</a></li>
+                    <li><a href="https://www.linkedin.com/in/francisco-ropero-750266261/" target="_blank"><i class="fab fa-linkedin"></i>Linkedin</a></li>
+                    <li><a href="https://github.com/Francrz14" target="_blank"><i class="fab fa-github"></i>Github</a></li>
+                </ul>
+            </div>
+            <div class="payment-options">
+                <h3>Métodos de Pago</h3>
+                <ul>
+                    <li><a href="#" target="_blank"><i class="fas fa-credit-card"></i> Tarjeta Bancaria</a></li>
+                    <li><a href="#" target="_blank"><i class="fas fa-mobile-alt"></i> Bizum</a></li>
+                    <li><a href="#" target="_blank"><i class="fab fa-paypal"></i> PayPal</a></li>
+                </ul>
+            </div>
+        </div>
+        <p class="copyright">&copy; 2023 Ultimate Games. Todos los derechos reservados.</p>
+    </footer> 
+</body>
+
+</html>

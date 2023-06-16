@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comprar</title>
+    <link rel="icon" href="./IMG/icon_sonic.jpg">
+    <link rel="stylesheet" href="main.css">
+    </head>
+    <body class="body_table">
+      <div class="container_table">
+        <h2>Carrito de Compras</h2>
+        <table id="cartTable">
+          <tr>
+            <th>Consola</th>
+            <th>Precio</th>
+          </tr>
+          <tr onclick="selectRow(this)">
+            <td>PlayStation 5</td>
+            <td>549 euros</td>
+          </tr>
+          <tr onclick="selectRow(this)">
+            <td>PlayStation 4</td>
+            <td>399 euros</td>
+          </tr>
+          <tr onclick="selectRow(this)">
+            <td>PlayStation 3</td>
+            <td>299 euros</td>
+          </tr>
+          <tr onclick="selectRow(this)">
+            <td>Xbox Series X</td>
+            <td>549 euros</td>
+          </tr>
+          <tr onclick="selectRow(this)">
+            <td>Xbox Series S</td>
+            <td>299 euros</td>
+          </tr>
+          <tr onclick="selectRow(this)">
+            <td>Nintendo 3DS</td>
+            <td>199 euros</td>
+          </tr>
+          <tr onclick="selectRow(this)">
+            <td>Evercade EXP</td>
+            <td>149 euros</td>
+          </tr>
+          <tr onclick="selectRow(this)">
+            <td>Nintendo Switch OLED</td>
+            <td>349 euros</td>
+          </tr>
+          <tr onclick="selectRow(this)">
+            <td>Nintendo Switch Slim</td>
+            <td>219 euros</td>
+          </tr>
+        </table>
+    
+        <button id="buyButton" class="hidden volver_inicio">Comprar</button>
+      </div>
+      <div class="boton_centrado">
+        <button class="volver_inicio"class="volver_inicio"><a href="index.html">Volver a Inicio</a></button>
+    </div>
+      <!-- footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="left-section">
+                <ul class="footer-links">
+                    <h3>Legal</h3>
+                    <li><a href="politica_de_privacidad.html" target="_blank">Política de privacidad</a></li>
+                    <li><a href="Terminos_de_uso.html" target="_blank">Términos de uso</a></li>
+                </ul>
+            </div>
+            <div class="right-section">
+                <ul class="social-links">
+                    <h3>Redes Sociales</h3>
+                    <li><a href="#" target="_blank"><i class="fab fa-facebook"></i>Facebook</a></li>
+                    <li><a href="#" target="_blank"><i class="fab fa-twitter"></i>Twitter</a></li>
+                    <li><a href="https://www.instagram.com/fran_crz_14/"><i class="fab fa-instagram" target="_blank"></i>Instagram</a></li>
+                    <li><a href="https://www.linkedin.com/in/francisco-ropero-750266261/" target="_blank"><i class="fab fa-linkedin"></i>Linkedin</a></li>
+                    <li><a href="https://github.com/Francrz14" target="_blank"><i class="fab fa-github"></i>Github</a></li>
+                </ul>
+            </div>
+            <div class="payment-options">
+                <h3>Métodos de Pago</h3>
+                <ul>
+                    <li><a href="#" target="_blank"><i class="fas fa-credit-card"></i> Tarjeta Bancaria</a></li>
+                    <li><a href="#" target="_blank"><i class="fas fa-mobile-alt"></i> Bizum</a></li>
+                    <li><a href="#" target="_blank"><i class="fab fa-paypal"></i> PayPal</a></li>
+                </ul>
+            </div>
+        </div>
+        <p class="copyright">&copy; 2023 Ultimate Games. Todos los derechos reservados.</p>
+    </footer>
+    <script>
+      function selectRow(row) {
+        var table = document.getElementById("cartTable");
+        var rows = table.getElementsByTagName("tr");
+  
+        for (var i = 0; i < rows.length; i++) {
+          rows[i].classList.remove("selected");
+        }
+  
+        row.classList.add("selected");
+  
+        var buyButton = document.getElementById("buyButton");
+        buyButton.classList.remove("hidden");
+      }
+    </script>
+    </body>
+    </html>
