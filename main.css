@@ -1,6 +1,5 @@
 * {
     box-sizing: border-box;
-
 }
 /* Estilos para el cuerpo */
 body {
@@ -9,7 +8,7 @@ body {
     margin: 0; /* Margen: 0 */
     padding: 0; /* Relleno: 0 */
     font-family: sans-serif; /* Familia de fuentes: sans-serif */
-    min-width: 1950px; /* Ancho mínimo: 1750 píxeles */
+     /* Ancho mínimo: 1750 píxeles */
     background-image: url('./IMG/the-last-of-us-parte-ii.jpg'); /* Imagen de fondo */
     background-repeat: no-repeat; /* No repetir la imagen de fondo */
     background-size: cover; /* Ajustar el tamaño de la imagen de fondo para cubrir */
@@ -19,7 +18,7 @@ body {
 /* Estilos para el encabezado */
 header {
     width: 100%;
-    position: relative; /* Establece la posición del elemento header como relativa */
+    position: relative; /*Establece la posición del elemento header como relativa*/
     background-image: url("./IMG/fondo_header.png"); /* Establece la imagen de fondo del encabezado */
     background-size: cover; /* Ajusta el tamaño de la imagen de fondo para que cubra todo el encabezado */
     background-position: center; /* Centra la imagen de fondo en el encabezado */
@@ -45,7 +44,7 @@ h1 {
 
 figure {
     width: 100%; /* Establece el ancho del elemento figure al 100% de su contenedor */
-    height: 250px; /* Establece la altura del elemento figure en 250 píxeles */
+    height: 20%; /* Establece la altura del elemento figure en 250 píxeles */
     margin: 0; /* Elimina los márgenes predeterminados del elemento figure */
     display: flex; /* Establece el elemento figure como un contenedor flexible */
     justify-content: center; /* Centra horizontalmente los elementos hijos dentro de figure */
@@ -53,7 +52,7 @@ figure {
 }
 
 figure img {
-    width: 250px; /* Establece el ancho de las imágenes dentro de figure en 250 píxeles */
+    width: 15%; /* Establece el ancho de las imágenes dentro de figure en 250 píxeles */
     /*filter: brightness(150%) sepia(100%) hue-rotate(180deg);*/ /* Comentario: Este estilo está comentado y no tiene efecto en la imagen */
 }
 
@@ -94,12 +93,14 @@ summary {
 /* Estilos para la sección principal */
 .pagina {
     display: flex; /* Establece el elemento con clase "pagina" como un contenedor flexible */
+    box-sizing: border-box;
 }
 
-menu {
-    min-width: 200px;
-    max-width: 200px;
-    font-size: 20px; /* Establece el tamaño de fuente del elemento "menu" en 20 píxeles */
+.menu {
+    padding-left: 45px;
+    min-width: 230px;
+    max-width: 240px;
+    font-size: 18px; /* Establece el tamaño de fuente del elemento "menu" en 20 píxeles */
     display: flex; /* Establece el elemento "menu" como un contenedor flexible */
     flex-direction: column; /* Establece la dirección de los elementos hijos como columnas */
     align-items: flex-start; /* Alinea los elementos hijos a la izquierda dentro de "menu" */
@@ -107,10 +108,10 @@ menu {
     margin-bottom: 0; /* Elimina el margen inferior predeterminado de "menu" */
     background-color: rgb(210, 208, 208); /* Establece el color de fondo de "menu" en un tono de gris */
     border-right: 1px solid black; /* Agrega un borde derecho de 1 píxel sólido de color negro a "menu" */
-    flex-basis: 13%; /* Establece el tamaño base flexible de "menu" en un 13% del espacio disponible */
+    flex-basis: 10%; /* Establece el tamaño base flexible de "menu" en un 13% del espacio disponible */
 }
 
-menu ul,
+.menu ul,
 aside ul {
     margin-top: 0px; /* Margen superior: 0 píxeles */
     padding-left: 0px; /* Relleno izquierdo: 0 píxeles */
@@ -122,14 +123,14 @@ aside h3 {
 }
 
 /* Estilos para los elementos de lista del menú y del aside */
-menu ul li,
+.menu ul li,
 aside ul li {
     list-style-type: none; /* Eliminar estilo de viñeta */
     margin-bottom: 10px; /* Margen inferior: 10 píxeles */
 }
 
 /* Estilos para los enlaces del menú y del aside */
-menu ul li a,
+.menu ul li a,
 aside ul li a {
     text-decoration: none; /* Sin decoración de subrayado */
     color: blueviolet; /* Color de texto: blueviolet */
@@ -137,9 +138,9 @@ aside ul li a {
 
 /* Estilos para la sección principal */
 section {
-    padding-bottom: 30px; /* Relleno inferior: 30 píxeles */
+    padding-bottom: 50px; /* Relleno inferior: 30 píxeles */
     background-color: rgb(199, 180, 218); /* Color de fondo: rgb(199, 180, 218) */
-    flex: 4; /* Expansión flexible: 4 */
+    flex-basis: 82%; /* Expansión flexible: 4 */
     display: flex; /* Mostrar como contenedor flexible */
     flex-direction: column; /* Dirección de los elementos hijos: columna */
 }
@@ -151,7 +152,10 @@ section {
     justify-content: center; /* Alinear elementos hijos horizontalmente al centro */
     margin-top: 60px; /* Margen superior: 60 píxeles */
     margin-bottom: 50px; /* Margen inferior: 50 píxeles */
-    margin-left: 180px; /* Margen izquierdo: 180 píxeles */
+}
+
+.caja_consolas .consolas {
+    margin-right: 50px;
 }
 
 /* Estilos para el botón de comprar consola */
@@ -176,18 +180,21 @@ section {
 /* Estilos para la línea divisoria */
 hr {
     margin-top: 35px; /* Margen superior: 35 píxeles */
+    border: 1px solid black;
 }
 
 /* Estilos para las cajas de las consolas */
 .consolas {
+    
+    margin: 0px 50px;
     border: 1px solid black; /* Borde: 1 píxel sólido de color negro */
-    width: 670px; /* Ancho: 670 píxeles */
+    width: 470px; /* Ancho: 670 píxeles */
     height: 320px; /* Alto: 320 píxeles */
     background-size: cover; /* Ajustar el tamaño de la imagen de fondo para cubrir */
     background-repeat: no-repeat; /* No repetir la imagen de fondo */
     background-position: center; /* Posición de la imagen de fondo: centro */
     box-sizing: border-box; /* Incluir el borde en el tamaño total de la caja */
-    margin-right: 150px; /* Margen derecho: 150 píxeles */
+    margin-right: 100px; /* Margen derecho: 150 píxeles */
     border-radius: 20px; /* Radio de borde: 20 píxeles */
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.5); /* Sombra del cuadro: 0 desplazamiento vertical, 4 píxeles desplazamiento horizontal, 4 píxeles desenfoque, color de sombra: rgba(0, 0, 0, 0.5) */
 }
@@ -226,16 +233,16 @@ hr {
 }
 /* Estilos para el aside */
 aside {
-    min-width: 200px;
-    max-width: 200px;
-    font-size: 20px; /* Tamaño de fuente: 20 píxeles */
+    min-width: 230px;
+    max-width: 240px;
+    font-size: 18px; /* Tamaño de fuente: 20 píxeles */
     display: flex; /* Mostrar como contenedor flexible */
     flex-direction: column; /* Dirección de los elementos hijos: columna */
     align-items: center; /* Alinear elementos hijos horizontalmente al centro */
     background-color: rgb(210, 208, 208); /* Color de fondo: rgb(210, 208, 208) */
     /*flex: 1; /* Establece la expansión flexible del aside para ocupar el espacio disponible */
     border-left: 1px solid black; /* Borde izquierdo: 1 píxel sólido de color negro */
-    flex-basis: 13%; /* Tamaño base flexible: 13% */
+    flex-basis: 10%; /* Tamaño base flexible: 13% */
 }
 
 /* Cambiar color del nav al colocar el ratón encima */
@@ -260,15 +267,17 @@ nav li a:hover {
 
 /* Estilos para el pie de página */
 footer {
-    
     width: 100%; /* Ancho: 100% */
     font-size: 25px; /* Tamaño de fuente: 25 píxeles */
     padding-top: 30px; /* Relleno superior: 30 píxeles */
     background-color: grey; /* Color de fondo: gris */
     height: auto; /* Altura automática */
+    display: flex; /* Mostrar como contenedor flexible */
+    justify-content: center; /* Alinear elementos hijos horizontalmente al centro */
+    align-items: flex-start; /* Alinear elementos hijos verticalmente al inicio */
+    flex-shrink: 0; /* Evitar que se encoja */
 }
 
-/* Estilos para el contenido del pie de página */
 .footer-content {
     display: flex; /* Mostrar como contenedor flexible */
     justify-content: center; /* Alinear elementos hijos horizontalmente al centro */
@@ -280,7 +289,6 @@ footer {
     margin-right: 150px; /* Margen derecho: 150 píxeles */
 }
 
-/* Estilos para los enlaces del pie de página */
 .footer-links,
 .social-links,
 .payment-options ul {
@@ -300,15 +308,21 @@ footer {
     margin-right: 6px; /* Margen derecho: 6 píxeles */
 }
 
-/* Estilos para el texto de derechos de autor en el pie de página */
 .footer-content {
     text-align: center; /* Alinear texto al centro */
+}
+
+.copyright {
+    text-align: center;
+    background-color: grey;
+    padding: 30px;
+    margin: 0;
 }
 
 /* Estilos para el contenedor de la política de privacidad */
 .container_privacidad {
     font-size: 20px; /* Tamaño de fuente: 20 píxeles */
-    max-width: 1000px; /* Ancho máximo: 1000 píxeles */
+     /* Ancho máximo: 1000 píxeles */
     margin: 0 auto; /* Margen: 0 en la parte superior e inferior, auto en los lados izquierdo y derecho para centrar horizontalmente */
     padding: 20px; /* Relleno: 20 píxeles */
     border: 1px solid #ccc; /* Borde: 1 píxel sólido de color #ccc */
@@ -324,7 +338,7 @@ h1 {
 /* Estilos para el contenedor de los términos de uso */
 .container_terminos {
     font-size: 20px; /* Tamaño de fuente: 20 píxeles */
-    max-width: 1000px; /* Ancho máximo: 1000 píxeles */
+     /* Ancho máximo: 1000 píxeles */
     margin: 0 auto; /* Margen: 0 en la parte superior e inferior, auto en los lados izquierdo y derecho para centrar horizontalmente */
     padding: 30px; /* Relleno: 30 píxeles */
     border: 1px solid #ccc; /* Borde: 1 píxel sólido de color #ccc */
@@ -342,7 +356,7 @@ h2 {
     padding: 20px; /* Relleno: 20 píxeles */
     background-color: #f9f9f9; /* Color de fondo: #f9f9f9 */
     border-radius: 10px; /* Radio de borde: 10 píxeles */
-    max-width: 800px; /* Ancho máximo: 800 píxeles */
+     /* Ancho máximo: 800 píxeles */
     margin: 0 auto; /* Margen: 0 en la parte superior e inferior, auto en los lados izquierdo y derecho para centrar horizontalmente */
 }
 
@@ -468,10 +482,6 @@ tr:hover {
 .volver_inicio a {
     text-decoration: none; /* Sin decoración de enlace */
     color: black; /* Color de texto: negro */
-}
-
-.copyright {
-    text-align: center;
 }
 
 /* para movil */
